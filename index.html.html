@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manaswi Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.menu-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 1200px;
+    height: 2200px;
+    padding: 200px;
+    position: relative;
+}
+
+.menu-card::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    background-color: #f8b400;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.restaurant-name {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.menu-item h2 {
+    border-bottom: 2px solid #f8b400;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+    color: #333;
+    font-size: 20px;
+}
+
+.menu-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-item li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.item-name {
+    font-size: 16px;
+    color: #666;
+}
+
+.item-price {
+    font-size: 16px;
+    color: #f8b400;
+}
+</style>
+<body>
+    <div class="menu-card">
+        <h1 class="restaurant-name">Manaswi Restaurant</h1>
+        <img src="./imagesres.jpg" height="500px" width="1000px">
+        <div class="menu-item">
+            <h2>Veg Items</h2>
+            <ul>
+                <li>
+                    <img src="./veg friedrice.jpeg" alt="Veg Friedrice" class="item-image">
+                    <div class="item-details">
+                    <span class="item-name">Veg Friedrice</span>
+                    <span class="item-price">60Rs</span>
+                </li>
+                <li>
+                    <img src="./zeera rice.jpeg" alt="Zeera Rice" class="item-image">
+                    <div class="item-details">
+                    <span class="item-name">Zeera Rice</span>
+                    <span class="item-price">90Rs</span>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-item">
+            <h2>Non-Veg Items</h2>
+            <ul>
+                <li>
+                    <img src="./chicken friedrice.jpeg" alt="Chicken Friedrice" class="item-image">
+                    <div class="item-details">
+                    <span class="item-name">Chicken Friedrice</span>
+                    <span class="item-price">70 Rs</span>
+                </li>
+                <li>
+                    <img src="./chicken manchurian.jpeg" alt="Chicken Manchurian" class="item-image">
+                    <div class="item-details">
+                    <span class="item-name">Chicken Manchurian</span>
+                    <span class="item-price">140 Rs</span>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-item">
+            <h2>Special Items</h2>
+            <ul>
+                <li>
+                    <img src="./cheesecake.jpeg" alt="Cheesecake" class="item-image">
+                    <div class="item-details">
+                    <span class="item-name">Cheesecake</span>
+                    <span class="item-price">75 Rs</span>
+                </li>
+                <li>
+                    <img src="./choclate fouondit.jpeg" alt="Chocolate Fondant" class="item-image">
+                    <div class="item-details">
+                    <span class="item-name">Chocolate Fondant</span>
+                    <span class="item-price">120 Rs</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
